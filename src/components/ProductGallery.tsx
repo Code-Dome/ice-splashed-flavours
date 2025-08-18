@@ -65,8 +65,10 @@ const ProductGallery = () => {
   const [selectedSize, setSelectedSize] = useState<"2kg" | "5kg">("2kg");
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
 
-  const getSizePrice = (size: "2kg" | "5kg") => {
-    return size === "2kg" ? "$12.99" : "$24.99";
+  const getSizePrice = (size: "2kg" | "5kg", type: string) => {
+    if (type === "plain")
+      return size === "2kg" ? "R25.00" : "R45.00";
+    return size === "2kg" ? "R12.00" : "R25.00"
   };
 
   return (
@@ -94,7 +96,7 @@ const ProductGallery = () => {
             >
               2KG Package
               <Badge variant="secondary" className="ml-2 text-xs sm:text-sm">
-                {getSizePrice("2kg")}
+                {getSizePrice("2kg", selectedProduct)}
               </Badge>
             </Button>
             <Button
@@ -106,7 +108,7 @@ const ProductGallery = () => {
             >
               5KG Package
               <Badge variant="secondary" className="ml-2 text-xs sm:text-sm">
-                {getSizePrice("5kg")}
+                {getSizePrice("5kg", selectedProduct)}
               </Badge>
             </Button>
           </div>
@@ -154,7 +156,7 @@ const ProductGallery = () => {
                       {product.flavor}
                     </Badge>
                     <span className="font-bold text-base sm:text-lg text-primary">
-                      {getSizePrice(selectedSize)}
+                      {getSizePrice(selectedSize, selectedProduct)}
                     </span>
                   </div>
                   
