@@ -17,9 +17,7 @@ const Hero = () => {
       
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 sm:mb-6 animate-fade-in leading-tight">
-            <img src={logo} alt={"Flavoured Ico Co Logo"}/>
-          </h1>
+          <img src={logo} alt={"Flavoured Ico Co Logo"}/>
           <p className="text-lg sm:text-xl md:text-2xl text-ice-light mb-6 sm:mb-8 animate-fade-in [animation-delay:0.2s] px-4 sm:px-0">
             Premium flavoured ice that refreshes and delights. 
             <br className="hidden sm:block" />
@@ -34,13 +32,6 @@ const Hero = () => {
               className="bg-white text-ice-blue hover:bg-ice-light hover:text-primary transition-smooth text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 shadow-ice w-full sm:w-auto"
             >
               Explore Our Flavors
-            </Button>
-            <Button 
-              variant="outline"
-              size="lg" 
-              className="border-white text-white hover:bg-white hover:text-ice-blue transition-smooth text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 w-full sm:w-auto"
-            >
-              Learn More
             </Button>
           </div>
           
