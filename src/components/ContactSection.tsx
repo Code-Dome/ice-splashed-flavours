@@ -12,7 +12,7 @@ const ContactSection = () => {
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto">
             Ready to stock up on premium flavoured ice? 
-            Contact us for orders, bulk pricing, or custom flavour requests.
+            Contact us for orders and bulk pricing
           </p>
         </div>
 
