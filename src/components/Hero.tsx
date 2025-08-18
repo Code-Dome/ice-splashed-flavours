@@ -16,48 +16,49 @@ const Hero = () => {
       
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-6xl md:text-7xl font-bold text-white mb-6 animate-fade-in">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 sm:mb-6 animate-fade-in leading-tight">
             Flavoured Ice Co
           </h1>
-          <p className="text-xl md:text-2xl text-ice-light mb-8 animate-fade-in [animation-delay:0.2s]">
+          <p className="text-lg sm:text-xl md:text-2xl text-ice-light mb-6 sm:mb-8 animate-fade-in [animation-delay:0.2s] px-4 sm:px-0">
             Premium flavoured ice that refreshes and delights. 
-            <br />
+            <br className="hidden sm:block" />
+            <span className="sm:hidden"> </span>
             Experience pure, natural fruit flavors in every crystal.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in [animation-delay:0.4s]">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center animate-fade-in [animation-delay:0.4s] px-4 sm:px-0">
             <Button 
               onClick={scrollToProducts}
               size="lg"
-              className="bg-white text-ice-blue hover:bg-ice-light hover:text-primary transition-smooth text-lg px-8 py-6 shadow-ice"
+              className="bg-white text-ice-blue hover:bg-ice-light hover:text-primary transition-smooth text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 shadow-ice w-full sm:w-auto"
             >
               Explore Our Flavors
             </Button>
             <Button 
               variant="outline"
               size="lg" 
-              className="border-white text-white hover:bg-white hover:text-ice-blue transition-smooth text-lg px-8 py-6"
+              className="border-white text-white hover:bg-white hover:text-ice-blue transition-smooth text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6 w-full sm:w-auto"
             >
               Learn More
             </Button>
           </div>
           
-          <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 text-white animate-fade-in [animation-delay:0.6s]">
+          <div className="mt-8 sm:mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 text-white animate-fade-in [animation-delay:0.6s] px-4 sm:px-0">
             <div className="text-center">
-              <div className="text-3xl font-bold">5+</div>
-              <div className="text-ice-light">Flavors Available</div>
+              <div className="text-2xl sm:text-3xl font-bold">5+</div>
+              <div className="text-ice-light text-sm sm:text-base">Flavors Available</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold">2</div>
-              <div className="text-ice-light">Size Options</div>
+              <div className="text-2xl sm:text-3xl font-bold">2</div>
+              <div className="text-ice-light text-sm sm:text-base">Size Options</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold">100%</div>
-              <div className="text-ice-light">Natural Flavors</div>
+              <div className="text-2xl sm:text-3xl font-bold">100%</div>
+              <div className="text-ice-light text-sm sm:text-base">Natural Flavors</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold">Fresh</div>
-              <div className="text-ice-light">Daily Production</div>
+              <div className="text-2xl sm:text-3xl font-bold">Fresh</div>
+              <div className="text-ice-light text-sm sm:text-base">Daily Production</div>
             </div>
           </div>
         </div>

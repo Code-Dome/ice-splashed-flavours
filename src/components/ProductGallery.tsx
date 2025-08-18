@@ -72,40 +72,40 @@ const ProductGallery = () => {
   return (
     <section id="products" className="py-20 bg-background">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+        <div className="text-center mb-12 sm:mb-16 px-4 sm:px-0">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4 sm:mb-6">
             Our Premium Flavors
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto">
             Discover our range of natural, refreshing flavored ice. 
             Each batch is carefully crafted for the perfect taste experience.
           </p>
         </div>
 
         {/* Size Selection */}
-        <div className="flex justify-center mb-12">
-          <div className="flex bg-secondary rounded-lg p-2 shadow-product">
+        <div className="flex justify-center mb-8 sm:mb-12 px-4 sm:px-0">
+          <div className="flex flex-col sm:flex-row bg-secondary rounded-lg p-2 shadow-product w-full sm:w-auto">
             <Button
               variant={selectedSize === "2kg" ? "default" : "ghost"}
-              className={`px-8 py-3 transition-smooth ${
+              className={`px-4 sm:px-8 py-3 transition-smooth text-sm sm:text-base ${
                 selectedSize === "2kg" ? "bg-primary text-primary-foreground shadow-ice" : ""
               }`}
               onClick={() => setSelectedSize("2kg")}
             >
               2KG Package
-              <Badge variant="secondary" className="ml-2">
+              <Badge variant="secondary" className="ml-2 text-xs sm:text-sm">
                 {getSizePrice("2kg")}
               </Badge>
             </Button>
             <Button
               variant={selectedSize === "5kg" ? "default" : "ghost"}
-              className={`px-8 py-3 transition-smooth ${
+              className={`px-4 sm:px-8 py-3 transition-smooth text-sm sm:text-base ${
                 selectedSize === "5kg" ? "bg-primary text-primary-foreground shadow-ice" : ""
               }`}
               onClick={() => setSelectedSize("5kg")}
             >
               5KG Package
-              <Badge variant="secondary" className="ml-2">
+              <Badge variant="secondary" className="ml-2 text-xs sm:text-sm">
                 {getSizePrice("5kg")}
               </Badge>
             </Button>
@@ -113,7 +113,7 @@ const ProductGallery = () => {
         </div>
 
         {/* Product Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 sm:gap-6 lg:gap-8 px-4 sm:px-0">
           {products.map((product) => (
             <Card 
               key={product.id}
@@ -142,25 +142,25 @@ const ProductGallery = () => {
                 </div>
                 
                 {/* Product Info */}
-                <div className="p-6">
-                  <h3 className={`text-xl font-bold mb-2 ${product.color}`}>
+                <div className="p-4 sm:p-6">
+                  <h3 className={`text-lg sm:text-xl font-bold mb-2 ${product.color}`}>
                     {product.name}
                   </h3>
-                  <p className="text-sm text-muted-foreground mb-3">
+                  <p className="text-xs sm:text-sm text-muted-foreground mb-3">
                     {product.description}
                   </p>
                   <div className="flex justify-between items-center">
                     <Badge variant="outline" className="text-xs">
                       {product.flavor}
                     </Badge>
-                    <span className="font-bold text-lg text-primary">
+                    <span className="font-bold text-base sm:text-lg text-primary">
                       {getSizePrice(selectedSize)}
                     </span>
                   </div>
                   
                   {selectedProduct === product.id && (
                     <Button 
-                      className={`w-full mt-4 ${product.gradient} text-white hover:opacity-90 transition-smooth`}
+                      className={`w-full mt-4 ${product.gradient} text-white hover:opacity-90 transition-smooth text-sm sm:text-base`}
                     >
                       Order {selectedSize.toUpperCase()}
                     </Button>
@@ -171,11 +171,11 @@ const ProductGallery = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <p className="text-muted-foreground mb-6">
+        <div className="text-center mt-8 sm:mt-12 px-4 sm:px-0">
+          <p className="text-muted-foreground mb-6 text-sm sm:text-base">
             Ready to place an order? Contact us for bulk pricing and custom flavors.
           </p>
-          <Button size="lg" className="bg-ice-gradient text-white shadow-ice hover:opacity-90 transition-smooth">
+          <Button size="lg" className="bg-ice-gradient text-white shadow-ice hover:opacity-90 transition-smooth text-sm sm:text-base px-6 sm:px-8">
             Contact Us Today
           </Button>
         </div>

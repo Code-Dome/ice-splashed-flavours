@@ -6,29 +6,29 @@ const ContactSection = () => {
   return (
     <section className="py-20 bg-ice-cool">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+        <div className="text-center mb-12 sm:mb-16 px-4 sm:px-0">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4 sm:mb-6">
             Get In Touch
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto">
             Ready to stock up on premium flavored ice? 
             Contact us for orders, bulk pricing, or custom flavor requests.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center px-4 sm:px-0">
           {/* Contact Info */}
           <div className="space-y-8">
             <div className="space-y-6">
               <Card className="border-0 shadow-product hover:shadow-hover transition-smooth">
-                <CardContent className="p-6 flex items-center space-x-4">
-                  <div className="bg-ice-gradient p-3 rounded-full">
-                    <Phone className="h-6 w-6 text-white" />
+                <CardContent className="p-4 sm:p-6 flex items-center space-x-3 sm:space-x-4">
+                  <div className="bg-ice-gradient p-2 sm:p-3 rounded-full flex-shrink-0">
+                    <Phone className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
                   </div>
-                  <div>
-                    <h3 className="font-semibold text-lg">Phone Orders</h3>
-                    <p className="text-muted-foreground">Call us for immediate assistance</p>
-                    <p className="font-medium text-primary">+1 (555) ICE-COOL</p>
+                  <div className="min-w-0">
+                    <h3 className="font-semibold text-base sm:text-lg">Phone Orders</h3>
+                    <p className="text-muted-foreground text-sm sm:text-base">Call us for immediate assistance</p>
+                    <p className="font-medium text-primary text-sm sm:text-base">+1 (555) ICE-COOL</p>
                   </div>
                 </CardContent>
               </Card>
@@ -76,15 +76,15 @@ const ContactSection = () => {
 
           {/* Order Form */}
           <Card className="shadow-product border-0">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-bold mb-6 text-center">Quick Order Form</h3>
+            <CardContent className="p-4 sm:p-6 lg:p-8">
+              <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-center">Quick Order Form</h3>
               
-              <div className="space-y-6">
+              <div className="space-y-4 sm:space-y-6">
                 <div>
                   <label className="block text-sm font-medium mb-2">Your Name</label>
                   <input 
                     type="text" 
-                    className="w-full p-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-smooth"
+                    className="w-full p-2 sm:p-3 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-smooth text-sm sm:text-base"
                     placeholder="Enter your full name"
                   />
                 </div>
@@ -134,7 +134,7 @@ const ContactSection = () => {
                   />
                 </div>
 
-                <Button className="w-full bg-ice-gradient text-white hover:opacity-90 transition-smooth py-6 text-lg shadow-ice">
+                <Button className="w-full bg-ice-gradient text-white hover:opacity-90 transition-smooth py-4 sm:py-6 text-base sm:text-lg shadow-ice">
                   Send Order Request
                 </Button>
               </div>
