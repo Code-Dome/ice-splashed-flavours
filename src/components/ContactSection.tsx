@@ -21,7 +21,7 @@ const ContactSection = () => {
           <div className="space-y-8">
             <div className="space-y-6">
               <Card className="border-0 shadow-product hover:shadow-hover transition-smooth">
-                <CardContent className="p-4 sm:p-6 flex items-center space-x-3 sm:space-x-4 text-center">
+                <CardContent className="p-4 sm:p-6 flex items-center justify-center space-x-3 sm:space-x-4 text-center">
                   <div className="bg-ice-gradient p-2 sm:p-3 rounded-full flex-shrink-0">
                     <Phone className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
                   </div>
@@ -34,27 +34,27 @@ const ContactSection = () => {
               </Card>
 
               <Card className="border-0 shadow-product hover:shadow-hover transition-smooth">
-                <CardContent className="p-6 flex items-center space-x-4 texxt-center">
-                  <div className="bg-ice-gradient p-3 rounded-full">
-                    <MapPin className="h-6 w-6 text-white" />
+                <CardContent className="p-4 sm:p-6 flex items-center justify-center space-x-3 sm:space-x-4 text-center">
+                  <div className="bg-ice-gradient p-2 sm:p-3 rounded-full flex-shrink-0">
+                    <MapPin className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
                   </div>
                   <div className="text-center">
-                    <h3 className="font-semibold text-lg">Location</h3>
-                    <p className="text-muted-foreground">Visit our production facility</p>
-                    <p className="font-medium text-primary">Bluff, Durban, 4052</p>
+                    <h3 className="font-semibold text-base sm:text-lg">Location</h3>
+                    <p className="text-muted-foreground text-sm sm:text-base">Visit our production facility</p>
+                    <p className="font-medium text-primary text-sm sm:text-base">Bluff, Durban, 4052</p>
                   </div>
                 </CardContent>
               </Card>
 
               <Card className="border-0 shadow-product hover:shadow-hover transition-smooth">
-                <CardContent className="p-6 flex items-center space-x-4 text-center">
-                  <div className="bg-ice-gradient p-3 rounded-full">
-                    <Clock className="h-6 w-6 text-white" />
+                <CardContent className="p-4 sm:p-6 flex items-center justify-center space-x-3 sm:space-x-4 text-center">
+                  <div className="bg-ice-gradient p-2 sm:p-3 rounded-full flex-shrink-0">
+                    <Clock className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
                   </div>
                   <div className="text-center">
-                    <h3 className="font-semibold text-lg">Business Hours</h3>
-                    <p className="text-muted-foreground">Monday - Saturday: 8AM - 6PM</p>
-                    <p className="font-medium text-primary">Sunday: 10AM - 4PM</p>
+                    <h3 className="font-semibold text-base sm:text-lg">Business Hours</h3>
+                    <p className="text-muted-foreground text-sm sm:text-base">Monday - Saturday: 8AM - 6PM</p>
+                    <p className="font-medium text-primary text-sm sm:text-base">Sunday: 10AM - 4PM</p>
                   </div>
                 </CardContent>
               </Card>
