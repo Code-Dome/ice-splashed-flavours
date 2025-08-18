@@ -26,7 +26,7 @@ const Hero = () => {
             Premium flavoured ice that refreshes and delights. 
             <br className="hidden sm:block" />
             <span className="sm:hidden"> </span>
-            Experience pure, natural fruit flavors in every crystal.
+            Experience pure, natural fruit flavours in every crystal.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center animate-fade-in [animation-delay:0.4s] px-4 sm:px-0">
@@ -41,8 +41,8 @@ const Hero = () => {
           
           <div className="mt-8 sm:mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 text-white animate-fade-in [animation-delay:0.6s] px-4 sm:px-0">
             <div className="text-center">
-              <div className="text-2xl sm:text-3xl font-bold">5+</div>
-              <div className="text-ice-light text-sm sm:text-base">Flavors Available</div>
+              <div className="text-2xl sm:text-3xl font-bold">5</div>
+              <div className="text-ice-light text-sm sm:text-base">Flavours Available</div>
             </div>
             <div className="text-center">
               <div className="text-2xl sm:text-3xl font-bold">2</div>
