@@ -96,7 +96,7 @@ const ProductGallery = () => {
             >
               2KG Package
               <Badge variant="secondary" className="ml-2 text-xs sm:text-sm">
-                {getSizePrice("2kg", selectedProduct)}
+                From {getSizePrice("2kg", "plain")}
               </Badge>
             </Button>
             <Button
@@ -108,7 +108,7 @@ const ProductGallery = () => {
             >
               5KG Package
               <Badge variant="secondary" className="ml-2 text-xs sm:text-sm">
-                {getSizePrice("5kg", selectedProduct)}
+                From {getSizePrice("5kg", "plain")}
               </Badge>
             </Button>
           </div>
@@ -156,7 +156,7 @@ const ProductGallery = () => {
                       {product.flavor}
                     </Badge>
                     <span className="font-bold text-base sm:text-lg text-primary">
-                      {getSizePrice(selectedSize, selectedProduct)}
+                      {getSizePrice(selectedSize, product.id)}
                     </span>
                   </div>
                   
