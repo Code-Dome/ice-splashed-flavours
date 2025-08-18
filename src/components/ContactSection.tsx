@@ -21,7 +21,7 @@ const ContactSection = () => {
           <div className="space-y-8">
             <div className="space-y-6">
               <Card className="border-0 shadow-product hover:shadow-hover transition-smooth">
-                <CardContent className="p-4 sm:p-6 flex items-center space-x-3 sm:space-x-4">
+                <CardContent className="p-4 sm:p-6 flex items-center space-x-3 sm:space-x-4 text-center">
                   <div className="bg-ice-gradient p-2 sm:p-3 rounded-full flex-shrink-0">
                     <Phone className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
                   </div>
@@ -34,7 +34,7 @@ const ContactSection = () => {
               </Card>
 
               <Card className="border-0 shadow-product hover:shadow-hover transition-smooth">
-                <CardContent className="p-6 flex items-center space-x-4">
+                <CardContent className="p-6 flex items-center space-x-4 texxt-center">
                   <div className="bg-ice-gradient p-3 rounded-full">
                     <MapPin className="h-6 w-6 text-white" />
                   </div>
@@ -47,7 +47,7 @@ const ContactSection = () => {
               </Card>
 
               <Card className="border-0 shadow-product hover:shadow-hover transition-smooth">
-                <CardContent className="p-6 flex items-center space-x-4">
+                <CardContent className="p-6 flex items-center space-x-4 text-center">
                   <div className="bg-ice-gradient p-3 rounded-full">
                     <Clock className="h-6 w-6 text-white" />
                   </div>
