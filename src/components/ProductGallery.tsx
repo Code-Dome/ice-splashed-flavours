@@ -67,8 +67,8 @@ const ProductGallery = () => {
 
   const getSizePrice = (size: "2kg" | "5kg", type: string) => {
     if (type === "plain")
-      return size === "2kg" ? "R25.00" : "R45.00";
-    return size === "2kg" ? "R12.00" : "R25.00"
+      return size === "2kg" ? "R12.00" : "R25.00"
+    return size === "2kg" ? "R25.00" : "R45.00"
   };
 
   return (
