@@ -25,7 +25,7 @@ const ContactSection = () => {
                   <div className="bg-ice-gradient p-2 sm:p-3 rounded-full flex-shrink-0">
                     <Phone className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
                   </div>
-                  <div className="min-w-0">
+                  <div className="min-w-0 text-center">
                     <h3 className="font-semibold text-base sm:text-lg">Phone/ Whatsapp Orders</h3>
                     <p className="text-muted-foreground text-sm sm:text-base">Call us for immediate assistance</p>
                     <p className="font-medium text-primary text-sm sm:text-base">+27 83 560 2720</p>
@@ -38,7 +38,7 @@ const ContactSection = () => {
                   <div className="bg-ice-gradient p-3 rounded-full">
                     <MapPin className="h-6 w-6 text-white" />
                   </div>
-                  <div>
+                  <div className="text-center">
                     <h3 className="font-semibold text-lg">Location</h3>
                     <p className="text-muted-foreground">Visit our production facility</p>
                     <p className="font-medium text-primary">Bluff, Durban, 4052</p>
@@ -51,7 +51,7 @@ const ContactSection = () => {
                   <div className="bg-ice-gradient p-3 rounded-full">
                     <Clock className="h-6 w-6 text-white" />
                   </div>
-                  <div>
+                  <div className="text-center">
                     <h3 className="font-semibold text-lg">Business Hours</h3>
                     <p className="text-muted-foreground">Monday - Saturday: 8AM - 6PM</p>
                     <p className="font-medium text-primary">Sunday: 10AM - 4PM</p>
