@@ -33,23 +33,17 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-lg mb-4">Contact</h4>
             <ul className="space-y-2 text-ice-light">
-              <li>+1 (555) ICE-COOL</li>
-              <li>orders@flavouredice.co</li>
-              <li>123 Cool Street</li>
-              <li>Freeze City, FC 12345</li>
+              <li>+27 83 560 2720</li>
+              <li>Bluff, Durban</li>
+              <li>4052</li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-ice-blue/30 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-ice-light text-sm">
-            © 2024 Flavoured Ice Co. All rights reserved.
+            © 2025 Flavoured Ice Co. All rights reserved.
           </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-ice-light hover:text-white transition-smooth">Privacy Policy</a>
-            <a href="#" className="text-ice-light hover:text-white transition-smooth">Terms of Service</a>
-            <a href="#" className="text-ice-light hover:text-white transition-smooth">Bulk Orders</a>
-          </div>
         </div>
       </div>
     </footer>
