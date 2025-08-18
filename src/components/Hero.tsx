@@ -17,7 +17,11 @@ const Hero = () => {
       
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="max-w-4xl mx-auto">
-          <img src={logo} alt={"Flavoured Ico Co Logo"}/>
+          <img 
+            src={logo} 
+            alt={"Flavoured Ico Co Logo"} 
+            className="w-64 sm:w-72 md:w-80 lg:w-96 mx-auto mb-6"
+          />
           <p className="text-lg sm:text-xl md:text-2xl text-ice-light mb-6 sm:mb-8 animate-fade-in [animation-delay:0.2s] px-4 sm:px-0">
             Premium flavoured ice that refreshes and delights. 
             <br className="hidden sm:block" />
