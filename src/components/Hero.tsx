@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-ice-splash.jpg";
+import logo from "@/assets/logo.png";
 
 const Hero = () => {
   const scrollToProducts = () => {
@@ -17,7 +18,7 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 sm:mb-6 animate-fade-in leading-tight">
-            Flavoured Ice Co
+            <img src={logo} alt={"Flavoured Ico Co Logo"}/>
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl text-ice-light mb-6 sm:mb-8 animate-fade-in [animation-delay:0.2s] px-4 sm:px-0">
             Premium flavoured ice that refreshes and delights. 
