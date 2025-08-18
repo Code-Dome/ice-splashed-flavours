@@ -8,35 +8,66 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 200 20% 98%;
+    --foreground: 220 15% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 220 15% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 220 15% 20%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 200 100% 45%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 200 20% 95%;
+    --secondary-foreground: 220 15% 20%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 200 20% 95%;
+    --muted-foreground: 220 10% 50%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 200 100% 90%;
+    --accent-foreground: 220 15% 20%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 200 20% 90%;
+    --input: 200 20% 90%;
+    --ring: 200 100% 45%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Ice Brand Colors */
+    --ice-blue: 200 100% 45%;
+    --ice-light: 200 100% 90%;
+    --ice-white: 0 0% 100%;
+    --ice-cool: 200 20% 98%;
+    
+    /* Fruit Flavors */
+    --cherry-red: 0 85% 55%;
+    --strawberry-pink: 345 85% 65%;
+    --lemon-yellow: 50 100% 60%;
+    --watermelon-green: 140 60% 45%;
+    
+    /* Gradients */
+    --gradient-ice: linear-gradient(135deg, hsl(var(--ice-blue)), hsl(var(--ice-light)));
+    --gradient-cool: linear-gradient(180deg, hsl(var(--ice-cool)), hsl(var(--ice-white)));
+    --gradient-cherry: linear-gradient(135deg, hsl(var(--cherry-red)), hsl(345 100% 70%));
+    --gradient-strawberry: linear-gradient(135deg, hsl(var(--strawberry-pink)), hsl(345 100% 80%));
+    --gradient-lemon: linear-gradient(135deg, hsl(var(--lemon-yellow)), hsl(50 100% 80%));
+    --gradient-watermelon: linear-gradient(135deg, hsl(var(--watermelon-green)), hsl(140 60% 65%));
+    
+    /* Shadows */
+    --shadow-ice: 0 10px 30px -10px hsl(var(--ice-blue) / 0.2);
+    --shadow-product: 0 20px 40px -15px hsl(220 15% 20% / 0.15);
+    --shadow-hover: 0 25px 50px -12px hsl(220 15% 20% / 0.25);
+    
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -102,4 +133,31 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@layer utilities {
+  /* Ice Theme Utilities */
+  .bg-ice-gradient { background: var(--gradient-ice); }
+  .bg-cool-gradient { background: var(--gradient-cool); }
+  .bg-cherry-gradient { background: var(--gradient-cherry); }
+  .bg-strawberry-gradient { background: var(--gradient-strawberry); }
+  .bg-lemon-gradient { background: var(--gradient-lemon); }
+  .bg-watermelon-gradient { background: var(--gradient-watermelon); }
+  
+  .shadow-ice { box-shadow: var(--shadow-ice); }
+  .shadow-product { box-shadow: var(--shadow-product); }
+  .shadow-hover { box-shadow: var(--shadow-hover); }
+  
+  .transition-smooth { transition: var(--transition-smooth); }
+  .transition-bounce { transition: var(--transition-bounce); }
+  
+  .text-ice-blue { color: hsl(var(--ice-blue)); }
+  .text-cherry { color: hsl(var(--cherry-red)); }
+  .text-strawberry { color: hsl(var(--strawberry-pink)); }
+  .text-lemon { color: hsl(var(--lemon-yellow)); }
+  .text-watermelon { color: hsl(var(--watermelon-green)); }
+  
+  .bg-ice-blue { background-color: hsl(var(--ice-blue)); }
+  .bg-ice-light { background-color: hsl(var(--ice-light)); }
+  .bg-ice-cool { background-color: hsl(var(--ice-cool)); }
 }
