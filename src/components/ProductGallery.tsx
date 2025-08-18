@@ -172,15 +172,6 @@ const ProductGallery = () => {
             </Card>
           ))}
         </div>
-
-        <div className="text-center mt-8 sm:mt-12 px-4 sm:px-0">
-          <p className="text-muted-foreground mb-6 text-sm sm:text-base">
-            Ready to place an order? Contact us for bulk pricing
-          </p>
-          <Button size="lg" className="bg-ice-gradient text-white shadow-ice hover:opacity-90 transition-smooth text-sm sm:text-base px-6 sm:px-8">
-            Contact Us Today
-          </Button>
-        </div>
       </div>
     </section>
   );
