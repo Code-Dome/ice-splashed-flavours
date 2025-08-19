@@ -8,14 +8,14 @@ const Hero = () => {
     };
 
     return (
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cool-gradient mb-2">
+        <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cool-gradient">
             <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-[2]"
                 style={{backgroundImage: `url(${heroImage})`}}
             />
             <div className="absolute inset-0 bg-ice-gradient opacity-80"/>
 
-            <div className="relative z-10 container mx-auto px-6 text-center">
+            <div className="relative z-10 container mx-auto px-6 text-center mb-2">
                 <div className="max-w-4xl mx-auto">
                     <img
                         src={logo}
