@@ -15,7 +15,7 @@ const Hero = () => {
             />
             <div className="absolute inset-0 bg-ice-gradient opacity-80"/>
 
-            <div className="relative z-10 container mx-auto px-6 text-center mb-2">
+            <div className="relative z-10 container mx-auto px-6 text-center mb-8">
                 <div className="max-w-4xl mx-auto">
                     <img
                         src={logo}
