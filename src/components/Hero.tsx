@@ -8,7 +8,7 @@ const Hero = () => {
     };
 
     return (
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cool-gradient">
+        <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cool-gradient mb-2">
             <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-[2]"
                 style={{backgroundImage: `url(${heroImage})`}}
@@ -54,7 +54,7 @@ const Hero = () => {
                     </div>
 
                     <div
-                        className="mt-8 sm:mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 text-[#21698a] animate-fade-in [animation-delay:0.6s] px-4 sm:px-0  mb-2">
+                        className="mt-8 sm:mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 text-[#21698a] animate-fade-in [animation-delay:0.6s] px-4 sm:px-0">
                         <div className="text-center">
                             <div className="text-2xl sm:text-3xl font-bold">5</div>
                             <div className="text-[#21698a]/80 text-sm sm:text-base">Flavours Available</div>
