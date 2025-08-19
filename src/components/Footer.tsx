@@ -43,11 +43,17 @@ const Footer = () => {
           <p className="text-ice-light text-sm">
             © 2025 Flavoured Ice Co. All rights reserved.
           </p>
+          <p className="text-sm text-ice-light mt-4 md:mt-0">
+            Designed with ❤️ by{" "}
+            <a
+                href="https://www.shogunn.dev"
+                className="text-[#323232]/80 hover:text-[#323232]"
+            >
+              Shogun Dot Dev
+            </a>
+          </p>
         </div>
 
-        <p className="text-ice-light text-sm mt-4 md:mt-0">
-          Designed with ❤️ by <a href={"https://www.shogunn.dev"} className={"text-[#323232]/80"}>Shogun Dot Dev</a>
-        </p>
       </div>
     </footer>
   );

@@ -66,20 +66,28 @@ const Hero = () => {
                     </div>
 
                     <div
-                        className="mt-8 sm:mt-12 grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 text-[#21698a] animate-fade-in [animation-delay:0.6s] px-4 sm:px-0">
+                        className="mt-8 sm:mt-12 grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 text-[#21698a] animate-fade-in [animation-delay:0.6s] px-4 sm:px-0"
+                    >
+                        {/* ZERO Sugar */}
                         <div className="text-center">
                             <div className="text-flavor-strawberry text-2xl sm:text-3xl font-bold">ZERO</div>
                             <div className="text-[#21698a]/80 text-sm sm:text-base">Sugar</div>
                         </div>
+
+                        {/* ZERO Preservatives */}
                         <div className="text-center">
                             <div className="text-flavor-strawberry text-2xl sm:text-3xl font-bold">ZERO</div>
                             <div className="text-[#21698a]/80 text-sm sm:text-base">Preservatives</div>
                         </div>
-                        <div className="text-center">
+
+                        {/* FLAVOUR Inside */}
+                        <div className="text-center col-span-2 md:col-span-1 md:col-start-3">
                             <div className="text-flavor-strawberry text-2xl sm:text-3xl font-bold">FLAVOUR</div>
                             <div className="text-[#21698a]/80 text-sm sm:text-base">Inside</div>
                         </div>
                     </div>
+
+
                 </div>
             </div>
         </section>

@@ -31,7 +31,7 @@ const ContactSection = () => {
                   <h3 className="font-semibold text-lg md:text-xl text-foreground">Phone / WhatsApp Orders</h3>
                   <p className="text-muted-foreground text-sm sm:text-base">Call us for immediate assistance</p>
                   <p className="font-medium text-primary text-sm sm:text-base mt-1">
-                    <a href="tel:+27835602720" className="hover:underline">+27 83 388 5172</a>
+                    <a href="tel:+27833885172" className="hover:underline">+27 83 388 5172</a>
                   </p>
                 </div>
               </CardContent>
