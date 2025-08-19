@@ -1,4 +1,4 @@
-import { Snowflake } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
@@ -8,12 +8,11 @@ const Footer = () => {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center mb-4">
-              <Snowflake className="h-8 w-8 mr-3 text-ice-light" />
-              <h3 className="text-2xl font-bold">Flavoured Ice Co</h3>
+              <img src={logo} alt={"Flavoured Ice Logo"} height={"164px"} width={"164px"}/>
             </div>
             <p className="text-ice-light max-w-md">
-              Premium quality flavored ice made with natural ingredients. 
-              Refreshing taste in every crystal, delivered fresh to your door.
+              Premium quality flavoured ice with a refreshing taste in every crystal. Made with zero sugar and no
+              preservatives, our cubes are infused with natural-tasting flavours.
             </p>
           </div>
 
@@ -33,7 +32,7 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-lg mb-4">Contact</h4>
             <ul className="space-y-2 text-ice-light">
-              <li>+27 83 560 2720</li>
+              <li>+27 83 388 5172</li>
               <li>Bluff, Durban</li>
               <li>4052</li>
             </ul>
@@ -45,6 +44,10 @@ const Footer = () => {
             © 2025 Flavoured Ice Co. All rights reserved.
           </p>
         </div>
+
+        <p className="text-ice-light text-sm mt-4 md:mt-0">
+          Designed with ❤️ by <a href={"https://www.shogunn.dev"} className={"text-[#323232]/80"}>Shogun Dot Dev</a>
+        </p>
       </div>
     </footer>
   );

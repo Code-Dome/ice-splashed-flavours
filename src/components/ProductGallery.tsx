@@ -22,7 +22,7 @@ const products: Product[] = [
     color: "text-cherry",
     image: "/lovable-uploads/9bcc763c-e56d-4b1e-b081-7ad358cd8348.png",
     hoverImage: "/lovable-uploads/ice-cubes-with-cherries-as-a-backdrop--ensure-the-.png",
-    description: "Bold cherry flavor with natural sweetness",
+    description: "Natural-tasting cherry flavor with zero sugar and no preservatives.",
     gradient: "bg-cherry-gradient",
   },
   {
@@ -32,7 +32,7 @@ const products: Product[] = [
     color: "text-strawberry",
     image: "/lovable-uploads/a26cd35e-6161-48ad-af42-c459a2d623ae.png",
     hoverImage: "/lovable-uploads/ice-cubes-with-strawberries-as-a-backdrop--ensure-.png",
-    description: "Refreshing strawberry taste from real fruit",
+    description: "Refreshing, natural strawberry taste – zero sugar, zero preservatives.",
     gradient: "bg-strawberry-gradient",
   },
   {
@@ -42,7 +42,7 @@ const products: Product[] = [
     color: "text-lemon",
     image: "/lovable-uploads/c30e9522-7210-4240-8097-c8b77370c450.png",
     hoverImage: "/lovable-uploads/ice-cubes-with-lemons-slices-as-a-backdrop--ensure.png",
-    description: "Tangy citrus burst with natural lemon essence",
+    description: "Zesty lemon burst with a natural taste, zero sugar, no preservatives.",
     gradient: "bg-lemon-gradient",
   },
   {
@@ -52,7 +52,7 @@ const products: Product[] = [
     color: "text-watermelon",
     image: "/lovable-uploads/a3390dcd-ea6e-4f2a-8565-42a053f07c9a.png",
     hoverImage: "/lovable-uploads/ice-cubes-with-watermelon-slices-as-a-backdrop--en.png",
-    description: "Cool watermelon flavor perfect for hot days",
+    description: "Juicy watermelon flavor that’s naturally refreshing, sugar-free, preservative-free.",
     gradient: "bg-watermelon-gradient",
   },
   {
@@ -62,10 +62,11 @@ const products: Product[] = [
     color: "text-ice-blue",
     image: "/lovable-uploads/ef52f004-d1b1-448f-9c16-292ecb4fffda.png",
     hoverImage: "/lovable-uploads/ice-cubes-with-as-a-backdrop--ensure-the-backgroun.png",
-    description: "Crystal clear ice, pure and refreshing",
+    description: "Crystal clear and pure – naturally refreshing with no sugar or preservatives.",
     gradient: "bg-ice-gradient",
   },
 ];
+
 
 const ProductGallery = () => {
   const [selectedSize, setSelectedSize] = useState<"2kg" | "5kg">("2kg");
@@ -93,39 +94,39 @@ const ProductGallery = () => {
               Our Premium Flavors
             </h2>
             <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto">
-              Discover our range of natural, refreshing flavored ice. Each batch is carefully crafted for the perfect taste experience.
+              <b>Drop them into water, soda, or spirits for instant refreshment. Perfect for cocktails, parties, or simply elevating your everyday drink.</b>
             </p>
           </div>
 
-          {/* Size Selection */}
-          <div className="flex justify-center mb-8 sm:mb-12 px-4 sm:px-0">
-            <div className="flex flex-col sm:flex-row bg-secondary rounded-lg p-2 shadow-product w-full sm:w-auto">
-              <Button
-                  variant={selectedSize === "2kg" ? "default" : "ghost"}
-                  className={`px-4 sm:px-8 py-3 transition-smooth text-sm sm:text-base ${
-                      selectedSize === "2kg" ? "bg-primary text-primary-foreground shadow-ice" : ""
-                  }`}
-                  onClick={() => setSelectedSize("2kg")}
-              >
-                2KG Package
-                {/*<Badge variant="secondary" className="ml-2 text-xs sm:text-sm">*/}
-                {/*  From {getSizePrice("2kg", "plain")}*/}
-                {/*</Badge>*/}
-              </Button>
-              <Button
-                  variant={selectedSize === "5kg" ? "default" : "ghost"}
-                  className={`px-4 sm:px-8 py-3 transition-smooth text-sm sm:text-base ${
-                      selectedSize === "5kg" ? "bg-primary text-primary-foreground shadow-ice" : ""
-                  }`}
-                  onClick={() => setSelectedSize("5kg")}
-              >
-                5KG Package
-                {/*<Badge variant="secondary" className="ml-2 text-xs sm:text-sm">*/}
-                {/*  From {getSizePrice("5kg", "plain")}*/}
-                {/*</Badge>*/}
-              </Button>
-            </div>
-          </div>
+          {/*/!* Size Selection *!/*/}
+          {/*<div className="flex justify-center mb-8 sm:mb-12 px-4 sm:px-0">*/}
+          {/*  <div className="flex flex-col sm:flex-row bg-secondary rounded-lg p-2 shadow-product w-full sm:w-auto">*/}
+          {/*    <Button*/}
+          {/*        variant={selectedSize === "2kg" ? "default" : "ghost"}*/}
+          {/*        className={`px-4 sm:px-8 py-3 transition-smooth text-sm sm:text-base ${*/}
+          {/*            selectedSize === "2kg" ? "bg-primary text-primary-foreground shadow-ice" : ""*/}
+          {/*        }`}*/}
+          {/*        onClick={() => setSelectedSize("2kg")}*/}
+          {/*    >*/}
+          {/*      2KG Package*/}
+          {/*      /!*<Badge variant="secondary" className="ml-2 text-xs sm:text-sm">*!/*/}
+          {/*      /!*  From {getSizePrice("2kg", "plain")}*!/*/}
+          {/*      /!*</Badge>*!/*/}
+          {/*    </Button>*/}
+          {/*    <Button*/}
+          {/*        variant={selectedSize === "5kg" ? "default" : "ghost"}*/}
+          {/*        className={`px-4 sm:px-8 py-3 transition-smooth text-sm sm:text-base ${*/}
+          {/*            selectedSize === "5kg" ? "bg-primary text-primary-foreground shadow-ice" : ""*/}
+          {/*        }`}*/}
+          {/*        onClick={() => setSelectedSize("5kg")}*/}
+          {/*    >*/}
+          {/*      5KG Package*/}
+          {/*      /!*<Badge variant="secondary" className="ml-2 text-xs sm:text-sm">*!/*/}
+          {/*      /!*  From {getSizePrice("5kg", "plain")}*!/*/}
+          {/*      /!*</Badge>*!/*/}
+          {/*    </Button>*/}
+          {/*  </div>*/}
+          {/*</div>*/}
 
           {/* Product Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 sm:gap-6 lg:gap-8 px-4 sm:px-0">
