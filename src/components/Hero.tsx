@@ -24,9 +24,6 @@ const Hero = () => {
                     />
                     <p className="text-lg sm:text-xl md:text-2xl text-white mb-6 sm:mb-8 animate-fade-in [animation-delay:0.2s] px-4 sm:px-0">
                         Premium flavoured ice that refreshes and delights.
-                        <br className="hidden sm:block"/>
-                        <span className="sm:hidden"> </span>
-                        Experience pure, natural fruit flavours in every crystal.
                     </p>
 
                     <div
@@ -57,7 +54,7 @@ const Hero = () => {
                     </div>
 
                     <div
-                        className="mt-8 sm:mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 text-[#21698a] animate-fade-in [animation-delay:0.6s] px-4 sm:px-0">
+                        className="mt-8 sm:mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 text-[#21698a] animate-fade-in [animation-delay:0.6s] px-4 sm:px-0  mb-2">
                         <div className="text-center">
                             <div className="text-2xl sm:text-3xl font-bold">5</div>
                             <div className="text-[#21698a]/80 text-sm sm:text-base">Flavours Available</div>
@@ -67,8 +64,8 @@ const Hero = () => {
                             <div className="text-[#21698a]/80 text-sm sm:text-base">Size Options</div>
                         </div>
                         <div className="text-center">
-                            <div className="text-2xl sm:text-3xl font-bold">100%</div>
-                            <div className="text-[#21698a]/80 text-sm sm:text-base">Natural Flavors</div>
+                            <div className="text-2xl sm:text-3xl font-bold">ZERO</div>
+                            <div className="text-[#21698a]/80 text-sm sm:text-base">Added sugars or preservatives</div>
                         </div>
                         <div className="text-center">
                             <div className="text-2xl sm:text-3xl font-bold">Fresh</div>
