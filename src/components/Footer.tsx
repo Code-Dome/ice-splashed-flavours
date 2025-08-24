@@ -37,6 +37,15 @@ const Footer = () => {
               <li>4052</li>
             </ul>
           </div>
+          <div>
+            <h4 className="font-semibold text-lg mb-4">Legal</h4>
+            <ul className="space-y-2 text-ice-light">
+              <li><a href={"privacy-policy"}>Privacy Policy</a></li>
+              <li><a href={"terms-and-conditions"}>Terms and Conditions</a></li>
+              <li><a href={"returns-delivery"}>Returns Delivery</a></li>
+              <li><a href={"disclaimer"}>Disclaimer</a></li>
+            </ul>
+          </div>
         </div>
 
         <div className="border-t border-ice-blue/30 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
